@@ -1,13 +1,17 @@
 <?php
 
-$phrase = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";
+$texte = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";
+$key = 0;
 
-foreach ($phrase as $key => $value){
+while (isset($texte[$key]) === true){
 
     if($key % 2 == 0){
-        echo "$value";
+        echo "$texte[$key]";
+        $key++;
     }else {
-        break;
+        $key++;
     }
+
 }
+
 ?>
