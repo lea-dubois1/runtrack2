@@ -1,12 +1,12 @@
 <?php
 
-$texte = "I'm sorry Dave I'm afraid I can't do that";
+$str = "I'm sorry Dave I'm afraid I can't do that";
 $key = 0;
 
-while (isset($texte[$key]) === true){
+while (isset($str[$key]) === true){
 
-    if($texte[$key] == "a" || $texte[$key] == "e" || $texte[$key] == "i" || $texte[$key] == "o" || $texte[$key] == "u" || $texte[$key] == "y" || $texte[$key] == "I"){
-        echo "$texte[$key]";
+    if($str[$key] == "a" || $str[$key] == "e" || $str[$key] == "i" || $str[$key] == "o" || $str[$key] == "u" || $str[$key] == "y" || $str[$key] == "I"){
+        echo "$str[$key]";
         $key++;
     }else {
         $key++;
