@@ -10,7 +10,7 @@
 
     <body>
 
-        <form action="" method="get" class="formulaire">
+        <form action="" method="post" class="formulaire">
 
             <label for="prenom">Entrez votre prénom: </label>
             <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
@@ -32,7 +32,7 @@
     $arg = 0;
     $val = 0;
 
-    foreach ($_GET as $key => $value){
+    foreach ($_POST as $key => $value){
         if ($value !== ""){
             $argument[$arg] = $key;
             $valeur[$val] = $value;
