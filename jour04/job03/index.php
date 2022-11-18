@@ -13,13 +13,13 @@
         <form action="" method="post" class="formulaire">
 
             <label for="prenom">Entrez votre prénom: </label>
-            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+            <input type="text" name="prenom" placeholder="Prénom" required>
 
-            <label for="email">Entrez votre nom: </label>
-            <input type="text" name="nom" id="nom" placeholder="Nom">
+            <label for="nom">Entrez votre nom: </label>
+            <input type="text" name="nom" placeholder="Nom">
 
-            <label for="email">Entrez votre age: </label>
-            <input type="text" name="age" id="age" placeholder="Age">
+            <label for="age">Entrez votre age: </label>
+            <input type="text" name="age" placeholder="Age">
 
             <input type="submit" value="Envoyer!">
         </form>
