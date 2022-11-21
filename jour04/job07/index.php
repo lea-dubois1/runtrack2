@@ -20,8 +20,6 @@
             <input type="submit" value="Envoyer">
         </form>
     </body>
-
-
 </html>
 
 <pre>
@@ -58,7 +56,7 @@
             }
         }
 
-        for($i = 0; $i <= $_GET["hauteur"] - 1; $i++){
+        for($i = 0; $i <= $_GET["hauteur"] - 1; $i++){      // RESTANGLE //
 
             for($b = 0; $b <= $_GET["largeur"] % 2 +1; $b++){
 
