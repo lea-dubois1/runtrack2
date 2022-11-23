@@ -32,9 +32,6 @@
             }
 
             echo $_COOKIE['nbvisites'] . " visites";
-
-            var_dump($_COOKIE['nbvisites']);
-            var_dump($total_count);
         ?>
 
         <form action="" method="post">
