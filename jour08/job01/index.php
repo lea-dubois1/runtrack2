@@ -21,7 +21,7 @@ if(isset($_SESSION['nbvisites'])){
     </head>
 
     <body>
-        <h1>Nombre de visites sur le page</h1>
+        <h1>Nombre de visites sur la page</h1>
 
         <?php
 
