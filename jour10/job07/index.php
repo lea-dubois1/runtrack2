@@ -1,7 +1,7 @@
 <?php
 
 $mysqli = new mysqli("localhost", "root", "", "jour09");
-$resultat = $mysqli -> query("SELECT COUNT(*) FROM etudiants");
+$resultat = $mysqli -> query("SELECT SUM(superficie) FROM etage");
 
 $res = $resultat -> fetch_all();
 
@@ -13,7 +13,7 @@ $res = $resultat -> fetch_all();
     <thead>
 
         <tr>
-            <th>Nombre d'étudiants</th>
+            <th>Superficie totale</th>
         </tr>
     </thead>
 

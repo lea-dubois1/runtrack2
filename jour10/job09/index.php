@@ -1,7 +1,7 @@
 <?php
 
 $mysqli = new mysqli("localhost", "root", "", "jour09");
-$resultat = $mysqli -> query("SELECT * FROM etudiants");
+$resultat = $mysqli -> query("SELECT * FROM salles ORDER BY capacite DESC");
 
 $res = $resultat -> fetch_all();
 
@@ -13,11 +13,9 @@ $res = $resultat -> fetch_all();
     <thead>
 
         <tr>
-            <th>Prénom</th>
             <th>Nom</th>
-            <th>Naissance</th>
-            <th>Sexe</th>
-            <th>Email</th>
+            <th>Etage</th>
+            <th>Capacité</th>
         </tr>
     </thead>
 
@@ -26,7 +24,7 @@ $res = $resultat -> fetch_all();
 
         <?php
 
-            foreach ($res as $value){
+            foreach ($res as $key => $value){
                 echo "<tr>";
                 foreach ($value as $cle => $valeur) {
                     if ($cle == 0){
